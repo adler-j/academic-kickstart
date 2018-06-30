@@ -1,17 +1,6 @@
-# Configuration of Academic
-# Documentation: https://sourcethemes.com/academic/
-
-# The URL of your website.
-# End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
-
-# Title of your site
-title = "Academic"
-
-# Your copyright notice - appears in site footer.
-# To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2018"
-
+baseurl = "https://www.paristidou.info/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
+title = "Petros Aristidou"
+copyright = "&copy; 2018 Petros Aristidou"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -20,10 +9,10 @@ preserveTaxonomyNames = true
 paginate = 10
 
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
+disqusShortname = "paristidou"
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-28054540-1"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
@@ -44,6 +33,9 @@ enableGitInfo = false
   fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
   smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
 
+[permalinks]
+  post = "/blog/:slug"  
+
 [params]
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
@@ -54,25 +46,25 @@ enableGitInfo = false
   font = "default"
 
   # Your details.
-  name = "Lena Smith"
-  role = "Professor of Artificial Intelligence"
+  name = "Dr Petros Aristidou"
+  role = "Lecturer in Smart Energy Systems"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Stanford University", url = "" } ]
+  organizations = [ { name = "University of Leeds", url = "https://www.leeds.ac.uk/" } ]
 
-  gravatar = false  # Get your avatar from Gravatar.com? (true/false)
+  gravatar = true  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "test@example.org"
-  address = "Building 1 Room 1, Stanford University, California, 90210, USA"
-  office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  phone = "888 888 88 88"
-  skype = "echo123"
+  email = "p.aristidou@ieee.org"
+  address = "School of Electronic & Electrical Engineering, University of Leeds, Woodhouse Lane, Leeds LS2 9JT, United Kingdom."
+  office_hours = ""
+  phone = "+44 (0) 113 343 2473"
+  skype = "p.aristidou"
   telegram = ""
 
-  # Enable Keybase in Contact widget by entering your keybase.io username.
-  keybase = ""
-
+  # Enable Keybase in Contact section by entering your keybase.io username.
+  keybase = "apetros"
+  
   # Discussion link (e.g. link to a forum, mailing list, or chat).
   #   Uncomment line below to use.
   #   discussion = { name = "Discuss", url = "https://discourse.gohugo.io" }
@@ -96,17 +88,17 @@ enableGitInfo = false
   #   1: Google Maps
   #   2: OpenStreetMap (Mapnik)
   #   3: OpenStreetMap (Mapbox)
-  map = 0
-  map_api_key = ""
-  latitude = "37.4275"
-  longitude = "-122.1697"
+  map = 1
+  map_api_key = "AIzaSyCFMWO55cPy683pFe32h9xI7Y7c02Ie4TU"
+  latitude = "53.809708"
+  longitude = "-1.5550362"
   zoom = 15
 
   # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "Jan 2, 2006"
+  date_format = "Mon, Jan 2, 2006"
   #   Examples: "3:04 pm" or "15:04"
-  time_format = "3:04 PM"
+  time_format = "15:04"
 
   # Show estimated reading time for posts?
   reading_time = true
@@ -158,11 +150,11 @@ enableGitInfo = false
   # Privacy pack
   #   Show a cookie consent message to visitors
   #   Anonymize IP in Google Analytics (if enabled)
-  privacy_pack = false
+  privacy_pack = true
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = []
+  custom_css = ["timeline.css"]
   custom_js  = []
 
   # Publication types.
@@ -174,12 +166,12 @@ enableGitInfo = false
   #   translated.
   publication_types = [
     'Uncategorized',  # 0
-    'Conference paper',  # 1
-    'Journal article',  # 2
-    'Manuscript',  # 3
-    'Report',  # 4
+    'Refereed Conference',  # 1
+    'Refereed Journal',  # 2
+    'Work in progress',  # 3
+    'Technical report',  # 4
     'Book',  # 5
-    'Book section'  # 6
+    'Book chapter'  # 6
   ]
 
   # Configuration of talk pages.
@@ -224,24 +216,39 @@ enableGitInfo = false
   #   Full list: https://jpswalsh.github.io/academicons/
 
   [[params.social]]
-    icon = "envelope"
-    icon_pack = "fa"
-    link = "mailto:test@example.org"
+		icon = "envelope"
+		icon_pack = "fa"
+		link = "mailto:p.aristidou@ieee.org"
 
-  [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/GeorgeCushen"
+	[[params.social]]
+		icon = "twitter"
+		icon_pack = "fa"
+		link = "https://twitter.com/petrosaristidou"
 
-  [[params.social]]
-    icon = "google-scholar"
-    icon_pack = "ai"
-    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+	[[params.social]]
+        icon = "google-scholar"
+        icon_pack = "ai"
+        link = "https://scholar.google.co.uk/citations?user=JShsAdoAAAAJ"
+        
+    [[params.social]]
+        icon = "researchgate"
+        icon_pack = "ai"
+        link = "https://www.researchgate.net/profile/Petros_Aristidou"
+        
+    [[params.social]]
+        icon = "orcid"
+        icon_pack = "ai"
+        link = "https://orcid.org/0000-0003-4429-0225"
+        
+    [[params.social]]
+        icon = "linkedin"
+        icon_pack = "fa"
+        link = "https://ch.linkedin.com/in/petrosaristidou"
 
-  [[params.social]]
-    icon = "github"
-    icon_pack = "fa"
-    link = "//github.com/gcushen"
+    [[params.social]]
+        icon = "bitbucket"
+        icon_pack = "fa"
+        link = "https://bitbucket.org/apetros/"
 
 
 # Navigation Links
@@ -254,34 +261,39 @@ enableGitInfo = false
 
 [[menu.main]]
   name = "Home"
-  url = "#about"
-  weight = 1
+  url = "#home"
+  weight = 2
+
+[[menu.main]]
+  name = "Research"
+  url = "#projects"
+  weight = 5  
 
 [[menu.main]]
   name = "Publications"
   url = "#publications_selected"
-  weight = 2
+  weight = 6
 
 [[menu.main]]
-  name = "Posts"
+  name = "Blog"
   url = "#posts"
-  weight = 3
-
-[[menu.main]]
-  name = "Projects"
-  url = "#projects"
-  weight = 4
+  weight = 7
 
 [[menu.main]]
   name = "Teaching"
   url = "#teaching"
-  weight = 5
-
+  weight = 8
+  
 [[menu.main]]
+  name = "Talks"
+  url = "talk"
+  weight = 15 
+
+  [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
-
+  weight = 17  
+  
 # Taxonomies.
 [taxonomies]
   tag = "tags"
@@ -293,4 +305,4 @@ enableGitInfo = false
 
 # Configure the English version of the website.
 [Languages.en]
-  languageCode = "en-us"
+  languageCode = "en-uk"
