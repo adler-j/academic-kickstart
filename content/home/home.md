@@ -37,6 +37,7 @@ For more information, check my [About me]({{< ref "about-me.md" >}}), my [Full C
 
 ### Recent News
 <div style="overflow: auto; height:150pt; width:100%;">
+**Aug 2018:** Our technical report "Contribution to Bulk System Control and Stability by Distributed Energy Resources Connected at Distribution Network", received the IEEE PES WG Recognition Award for Outstanding Technical Report!<br>
 **May 2018:** Our [paper]({{< ref "Markovic2018b.md" >}}) on partial grid-forming converters in low-inertia systems has been selected as one of the Best Conference Papers at PESGM2018.<br>
 **Apr 2018:** Our project on "Optimal Dispatch of Virtual Power Plant" got funded by The Royal Academy of Engineering.<br>
 **Mar 2018:** Our £1.5m EPSRC Global Challenges project on Creating Resilient Sustainable Microgrids just received funding.<br>
